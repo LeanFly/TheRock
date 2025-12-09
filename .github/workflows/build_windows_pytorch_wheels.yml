@@ -60,7 +60,7 @@ on:
           - gfx90X-dcgpu
           - gfx94X-dcgpu
           - gfx950-dcgpu
-        default: gfx1151
+        default: gfx103X-dgpu
       python_version:
         required: true
         type: string
