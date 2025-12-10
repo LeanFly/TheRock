@@ -137,6 +137,9 @@ jobs:
         # Note: there are mixed uses of 'bash' (this default) and 'cmd' below
         shell: bash
     steps:
+      - name: Ensure CHECKOUT_ROOT exists
+        shell: cmd
+        run: mkdir B:\src
       - name: Checkout
         uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
         with:
